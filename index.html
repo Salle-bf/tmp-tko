@@ -1,5 +1,129 @@
-<html>
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <title>Takeover by Bishop Fox</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <style>
+      * {
+        box-sizing: border-box;
+        margin: 0;
+        padding: 0;
+      }
+
+      body {
+        min-height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background: radial-gradient(circle at top, #ff3366 0, #0a0a0f 40%, #050509 100%);
+        color: #ffffff;
+        font-family: system-ui, -apple-system, BlinkMacSystemFont, "SF Pro Text",
+          "Segoe UI", sans-serif;
+      }
+
+      .card {
+        text-align: center;
+        padding: 3rem 2.5rem;
+        border-radius: 24px;
+        background: rgba(5, 5, 12, 0.86);
+        border: 1px solid rgba(255, 255, 255, 0.08);
+        box-shadow:
+          0 24px 60px rgba(0, 0, 0, 0.9),
+          0 0 40px rgba(255, 51, 102, 0.35);
+        max-width: 480px;
+        width: 100%;
+        backdrop-filter: blur(18px);
+      }
+
+      .logo-placeholder {
+        width: 120px;
+        height: 120px;
+        margin: 0 auto 2rem;
+        border-radius: 999px;
+        position: relative;
+        background: radial-gradient(circle at 30% 20%, #ffffff33 0, transparent 40%);
+      }
+
+      .logo-placeholder::before,
+      .logo-placeholder::after {
+        content: "";
+        position: absolute;
+        inset: 0;
+        border-radius: inherit;
+      }
+
+      .logo-placeholder::before {
+        border: 1px solid rgba(255, 255, 255, 0.55);
+        opacity: 0.7;
+      }
+
+      .logo-placeholder::after {
+        inset: 16%;
+        border: 1px dashed rgba(255, 255, 255, 0.4);
+        box-shadow: 0 0 20px rgba(255, 51, 102, 0.35);
+      }
+
+      h1 {
+        font-size: clamp(1.9rem, 3vw, 2.4rem);
+        letter-spacing: 0.08em;
+        text-transform: uppercase;
+        font-weight: 600;
+        line-height: 1.4;
+      }
+
+      h1 span {
+        display: block;
+        font-weight: 700;
+        letter-spacing: 0.12em;
+      }
+
+      h1 .accent {
+        color: #ff3366;
+        text-shadow:
+          0 0 12px rgba(255, 51, 102, 0.9),
+          0 0 32px rgba(255, 51, 102, 0.6);
+      }
+
+      @media (max-width: 480px) {
+        .card {
+          padding: 2.4rem 1.8rem;
+          border-radius: 20px;
+        }
+
+        .logo-placeholder {
+          width: 96px;
+          height: 96px;
+          margin-bottom: 1.8rem;
+        }
+      }
+    </style>
+  </head>
   <body>
-  <h1>Take Over by Bishop Fox</h1>
+    <main class="card">
+      <svg width="790px" height="90px" viewBox="0 0 790 90" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+                            <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+                                <g id="lines" fill-rule="nonzero">
+                                    <rect id="Rectangle-1" fill="#00A49E" x="624" y="26" width="45" height="4"></rect>
+                                    <rect id="Rectangle-2" fill="#D0CFCF" x="201" y="3" width="55" height="4"></rect>
+                                    <rect id="Rectangle-3" fill="#00A49E" x="191" y="7" width="25" height="8"></rect>
+                                    <rect id="Rectangle-4" fill="#BF1363" x="649" y="22" width="25" height="4"></rect>
+                                    <rect id="Rectangle-5" fill="#7A7D7D" opacity="0.5" x="42" y="39" width="88" height="8"></rect>
+                                    <rect id="Rectangle-6" fill="#7A7D7D" opacity="0.5" x="670" y="0" width="120" height="8"></rect>
+                                    <rect id="Rectangle-7" fill="#E40505" x="80" y="44" width="120" height="4"></rect>
+                                    <rect id="Rectangle-8" fill="#D0CFCF" x="596" y="81" width="132" height="4"></rect>
+                                    <rect id="Rectangle-9" fill="#D0CFCF" opacity="0.3" x="266" y="86" width="82" height="4"></rect>
+                                    <rect id="Rectangle-10" fill="#E40505" opacity="0.5" x="386" y="73" width="32" height="4"></rect>
+                                    <rect id="Rectangle-11" fill="#00A49E" opacity="0.2" x="0" y="24" width="32" height="4"></rect>
+                                </g>
+                            </g>
+                        </svg>
+      <div class="logo-placeholder"></div>
+
+      <h1>
+        <span>Takeover by</span>
+        <span class="accent">Bishop&nbsp;Fox.</span>
+      </h1>
+    </main>
   </body>
 </html>
